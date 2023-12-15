@@ -1,5 +1,5 @@
 import express from 'express';
-import { createUser, getUserByEmail } from '../db/users';
+import { createUser, getUserByEmail } from '../services/user-services';
 import { random , authentication} from '../helpers';
 
 export const login = async (req: express.Request, res: express.Response) => {
